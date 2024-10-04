@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#memories">Memories</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-text">
+                <h1>I'M IBRAHIM SAMOON</h1>
+                <p>I'm a Computer Science Student, Programmer, Python Developer, and Web Developer.</p><b><n></n></b>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+            <img src="../MY PIC.jpeg" alt="Ibrahim Samoon" class="hero-image">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am passionate about coding and technology. I love solving problems and building applications that make a difference.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Breast Cancer Prediction</h3>
+            <p>Breast Cancer Prediction that can accurately output.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>School Management System</h3>
+            <p>School management system where we upload the attendance of students.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </section>
+
+    <!-- Memories Section -->
+    <section id="memories">
+        <h2>Memories</h2>
+        <div class="memory-card">
+            <h3>My University Memories</h3>
+            <div class="image-grid">
+                <img src="../portfolio/group.jfif" alt="Graduation Image">
+                <img src="../portfolio/image 3.jpg" alt="Graduation Image">
+                <img src="../portfolio/img 4.jpg" alt="Graduation Image">
+                <img src="../portfolio/img5.jpg" alt="Graduation Image">
+            </div>
+            <p>IMCS University of Sindh Jamshoro</p>
+        </div>
+        <div class="memory-card">
+            <h3>My Beautiful City</h3>
+            <video controls autoplay muted loop>
+                <source src="../portfolio/7c19f973e23dd59564572fc0fcf41e38.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            
+    <!-- Articles Section -->
+    <section id="articles">
+        <h2>Articles</h2>
+        <div class="article-card">
+            <h3>Exploring Artificial Intelligence</h3>
+            <p>This article dives into the fundamentals of AI and its impact on modern technology.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="article-card">
+            <h3>Why Python is the Future of Programming</h3>
+            <p>An in-depth look at Python's capabilities and why it’s considered the future of coding.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Artificial Intelligence</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:ibrahimsamoo938@gmail.com">ibrahimsamoo938@gmail.com</a></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/your-number" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ibrahim Samoon. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        const links = document.querySelectorAll('nav ul li a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = e.target.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

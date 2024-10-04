@@ -1,0 +1,240 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f8fa;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to right, #f5a623, #fdbb2d);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(254, 254, 254);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: hwb(0 4% 96%);
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hero-text {
+    max-width: 70%;
+}
+
+.hero-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    object-position: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    overflow: hidden;
+}
+
+p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Animated Text Styling */
+.animated-text span {
+    display: inline-block;
+    opacity: 0;
+    animation: text-animation 10s infinite;
+}
+
+.animated-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.animated-text span:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.animated-text span:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.animated-text span:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.animated-text span:nth-child(5) {
+    animation-delay: 8s;
+}
+
+/* Animation Keyframes */
+@keyframes text-animation {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/* Button */
+.btn {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f5a623;
+}
+
+/* Section Styles */
+section {
+    margin: 2rem auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Card Styles */
+.project-card, .memory-card, .article-card {
+    background: linear-gradient(135deg, #ff6f61, #de64c1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover,
+.memory-card:hover,
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Content */
+.project-card h3, 
+.memory-card h3, 
+.article-card h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p, 
+.memory-card p, 
+.article-card p {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+/* Memory Cards Container */
+.memory-cards-container {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns for the first four cards */
+    gap: 20px; /* Space between cards */
+    margin-top: 1.5rem;
+}
+
+/* Memory Card Styles */
+.memory-card {
+    background: linear-gradient(135deg, #ff6f61, #de64c1);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* Hide overflow for rounded corners */
+   
+}
+
+.memory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styles */
+.memory-card img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Slightly rounded corners */
+    object-fit: cover; /* Ensure images cover the area */
+    width: 250px;
+    height: 180px;
+}
+/* Full Width Card */
+
+/* Card Title */
+.memory-card h3 {
+    color: white;
+    margin: 0.5rem 0;
+    font-size: 1rem; /* Smaller font size for card title */
+}
+.memory-card video{
+    width: 500px;
+    height: 300px;
+}
